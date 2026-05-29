@@ -1,0 +1,11 @@
+{
+  "milks": [
+    { "kind": "devondaleFullCreamUHT", "displayName": "Devondale Full Cream UHT", "default": true },
+    { "kind": "fullCreamFresh", "displayName": "Full Cream (Fresh)" },
+    { "kind": "skim", "displayName": "Skim" },
+    { "kind": "lactoseFree", "displayName": "Lactose-Free" },
+    { "kind": "oat", "displayName": "Oat" },
+    { "kind": "soy", "displayName": "Soy" },
+    { "kind": "almond", "displayName": "Almond" }
+  ]
+}
