@@ -13,7 +13,7 @@ struct ShotTimerView: View {
     @State private var vm = ShotTimerViewModel()
 
     @State private var selectedBeanSlug: String?
-    @State private var drink: DrinkType = .flatWhite
+    @State private var drink: DrinkType = .cappuccino
     @State private var dose: Double = 18
     @State private var yield: Double = 36
     @State private var rating: Int = 0

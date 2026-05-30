@@ -11,7 +11,7 @@ struct OnboardingView: View {
 
     @State private var step = 0
     @State private var machineName = ""
-    @State private var drink: DrinkType = .flatWhite
+    @State private var drink: DrinkType = .cappuccino
 
     private let lastStep = 3
 

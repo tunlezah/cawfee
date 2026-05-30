@@ -4,9 +4,9 @@ import SwiftData
 @MainActor
 @Observable
 public final class FixMyCoffeeViewModel {
-    public var drink: DrinkType = .flatWhite
+    public var drink: DrinkType = .cappuccino
     public var milkKind: MilkKind = .devondaleFullCreamUHT
-    public var settings: MachineSettings = .defaultFlatWhite
+    public var settings: MachineSettings = .defaultCappuccino
     public var selectedSymptoms: Set<Symptom> = []
     public var selectedBeanSlug: String? = nil
     public var recommendation: Recommendation? = nil

@@ -48,7 +48,7 @@ public final class Recipe {
     }
 
     public var drink: DrinkType {
-        get { DrinkType(rawValue: drinkRaw) ?? .flatWhite }
+        get { DrinkType(rawValue: drinkRaw) ?? .cappuccino }
         set { drinkRaw = newValue.rawValue }
     }
 

@@ -25,7 +25,7 @@ struct TastingNoteEditorView: View {
         self.existing = note
         self.onSave = onSave
         _beanSlug = State(initialValue: note?.beanSlug)
-        _drink = State(initialValue: note?.drink ?? .flatWhite)
+        _drink = State(initialValue: note?.drink ?? .cappuccino)
         _descriptors = State(initialValue: Set(note?.descriptors ?? []))
         _body0 = State(initialValue: note?.body ?? 0)
         _acidity = State(initialValue: note?.acidity ?? 0)

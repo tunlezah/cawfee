@@ -44,7 +44,7 @@ public final class UserPreferences {
         singletonKey: String = "default",
         userMode: UserMode = .novice,
         defaultMilkKind: MilkKind = .devondaleFullCreamUHT,
-        defaultDrink: DrinkType = .flatWhite,
+        defaultDrink: DrinkType = .cappuccino,
         appearance: AppearancePreference = .system,
         hasSeededBeans: Bool = false,
         hasCompletedOnboarding: Bool = false,
@@ -69,7 +69,7 @@ public final class UserPreferences {
         set { defaultMilkKindRaw = newValue.rawValue }
     }
     public var defaultDrink: DrinkType {
-        get { DrinkType(rawValue: defaultDrinkRaw) ?? .flatWhite }
+        get { DrinkType(rawValue: defaultDrinkRaw) ?? .cappuccino }
         set { defaultDrinkRaw = newValue.rawValue }
     }
     public var appearance: AppearancePreference {

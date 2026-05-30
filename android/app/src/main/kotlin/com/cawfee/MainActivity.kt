@@ -32,7 +32,11 @@ class MainActivity : ComponentActivity() {
                 AppearancePreference.SYSTEM -> androidx.compose.foundation.isSystemInDarkTheme()
             }
             CawfeeTheme(darkTheme = dark) {
-                CawfeeApp()
+                if (prefs.hasCompletedOnboarding) {
+                    CawfeeApp()
+                } else {
+                    com.cawfee.ui.onboarding.OnboardingScreen(onFinish = {})
+                }
             }
         }
     }

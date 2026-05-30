@@ -20,9 +20,9 @@ struct RecipeEditorView: View {
         self.beans = beans
         self.onSave = onSave
         _name = State(initialValue: recipe?.name ?? "Untitled Recipe")
-        _drink = State(initialValue: recipe?.drink ?? .flatWhite)
+        _drink = State(initialValue: recipe?.drink ?? .cappuccino)
         _milkKind = State(initialValue: recipe?.milkKind ?? .devondaleFullCreamUHT)
-        _settings = State(initialValue: recipe?.settings ?? .defaultFlatWhite)
+        _settings = State(initialValue: recipe?.settings ?? .defaultCappuccino)
         _beanSlug = State(initialValue: recipe?.bean?.slug ?? "")
         _notes = State(initialValue: recipe?.notes ?? "")
         _isFavourite = State(initialValue: recipe?.isFavourite ?? false)

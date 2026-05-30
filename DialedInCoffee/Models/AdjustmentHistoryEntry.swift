@@ -62,7 +62,7 @@ public final class AdjustmentHistoryEntry {
         self.confidence = confidence
     }
 
-    public var drink: DrinkType { DrinkType(rawValue: drinkRaw) ?? .flatWhite }
+    public var drink: DrinkType { DrinkType(rawValue: drinkRaw) ?? .cappuccino }
     public var symptoms: [Symptom] { symptomsRaw.compactMap(Symptom.init(rawValue:)) }
     public var primaryParameter: AdjustmentParameter {
         AdjustmentParameter(rawValue: primaryParameterRaw) ?? .grinder

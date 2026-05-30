@@ -27,5 +27,5 @@ public final class SymptomLog {
     }
 
     public var symptoms: [Symptom] { symptomsRaw.compactMap(Symptom.init(rawValue:)) }
-    public var drink: DrinkType { DrinkType(rawValue: drinkRaw) ?? .flatWhite }
+    public var drink: DrinkType { DrinkType(rawValue: drinkRaw) ?? .cappuccino }
 }

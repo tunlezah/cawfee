@@ -31,7 +31,7 @@ public final class TastingNote {
         date: Date = Date(),
         beanName: String? = nil,
         beanSlug: String? = nil,
-        drink: DrinkType = .flatWhite,
+        drink: DrinkType = .cappuccino,
         descriptors: [String] = [],
         body: Int = 0,
         acidity: Int = 0,
@@ -55,7 +55,7 @@ public final class TastingNote {
     }
 
     public var drink: DrinkType {
-        get { DrinkType(rawValue: drinkRaw) ?? .flatWhite }
+        get { DrinkType(rawValue: drinkRaw) ?? .cappuccino }
         set { drinkRaw = newValue.rawValue }
     }
 }
