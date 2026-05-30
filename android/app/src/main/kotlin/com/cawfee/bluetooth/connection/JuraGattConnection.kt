@@ -83,7 +83,6 @@ class JuraGattConnection(
             else readDeferred?.completeExceptionally(IllegalStateException("read failed: $status"))
         }
 
-        @Deprecated("Pre-33 read callback")
         @Suppress("DEPRECATION")
         override fun onCharacteristicRead(g: BluetoothGatt, c: BluetoothGattCharacteristic, status: Int) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) return // newer overload used
@@ -105,7 +104,6 @@ class JuraGattConnection(
             _notifications.tryEmit(c.uuid to value)
         }
 
-        @Deprecated("Pre-33 notification callback")
         @Suppress("DEPRECATION")
         override fun onCharacteristicChanged(g: BluetoothGatt, c: BluetoothGattCharacteristic) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) return

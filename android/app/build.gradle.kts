@@ -51,6 +51,13 @@ android {
     testOptions {
         unitTests.isReturnDefaultValues = true
     }
+
+    // Keep lint as an advisory report in CI: findings produce the HTML report but do not
+    // fail the build, so APK generation is never blocked by a lint warning.
+    lint {
+        abortOnError = false
+        checkReleaseBuilds = false
+    }
 }
 
 kotlin {

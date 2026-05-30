@@ -45,8 +45,8 @@ fun DashboardScreen(navController: NavHostController) {
             }
             items(shortcuts, key = { it.route }) { s ->
                 Card(
-                    Modifier.fillMaxWidth(),
                     onClick = { navController.navigate(s.route) },
+                    modifier = Modifier.fillMaxWidth(),
                 ) {
                     Column(Modifier.padding(16.dp)) {
                         Text(s.title, fontWeight = FontWeight.SemiBold)
