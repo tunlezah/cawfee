@@ -1,0 +1,125 @@
+name: Android CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+# The Gradle project lives in the android/ subdirectory.
+defaults:
+  run:
+    working-directory: android
+
+concurrency:
+  group: android-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # Fast, SDK-free verification of the platform-independent logic.
+  jvm-tests:
+    name: Pure-JVM tests (:core, :protocol)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Run domain + protocol unit tests
+        run: ./gradlew :core:test :protocol:test
+      - name: Upload test reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jvm-test-reports
+          path: |
+            android/core/build/reports/tests
+            android/protocol/build/reports/tests
+
+  # Lint + Android unit tests + debug build verification (every PR).
+  build-and-test:
+    name: Lint, unit test & build debug APK
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Android Lint
+        run: ./gradlew :app:lintDebug
+      - name: Unit tests (all modules)
+        run: ./gradlew testDebugUnitTest
+      - name: Assemble debug APK
+        run: ./gradlew :app:assembleDebug
+      - name: Upload debug APK (sideloadable)
+        uses: actions/upload-artifact@v4
+        with:
+          name: cawfee-debug-apk
+          path: android/app/build/outputs/apk/debug/*.apk
+      - name: Upload lint results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lint-results
+          path: android/app/build/reports/lint-results-debug.html
+
+  # Full release artifacts on main: APK (for sideload) + AAB (for Play).
+  release-artifacts:
+    name: Build release APK + AAB
+    if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    needs: [jvm-tests, build-and-test]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Assemble release APK & AAB
+        run: ./gradlew :app:assembleRelease :app:bundleRelease
+      - name: Upload release APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: cawfee-release-apk
+          path: android/app/build/outputs/apk/release/*.apk
+      - name: Upload release AAB
+        uses: actions/upload-artifact@v4
+        with:
+          name: cawfee-release-aab
+          path: android/app/build/outputs/bundle/release/*.aab
+
+  # Best-effort instrumented (Compose UI) tests on an emulator.
+  instrumented-tests:
+    name: Instrumented tests (emulator)
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        api-level: [34]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Run connected Compose UI tests
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: ${{ matrix.api-level }}
+          arch: x86_64
+          working-directory: android
+          script: ./gradlew :app:connectedDebugAndroidTest
