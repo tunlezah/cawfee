@@ -10,6 +10,7 @@ import androidx.compose.material3.NavigationRailItem
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.adaptive.ExperimentalMaterial3AdaptiveApi
 import androidx.compose.material3.adaptive.currentWindowAdaptiveInfo
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -35,6 +36,7 @@ import com.cawfee.ui.tools.StylePresetsScreen
  * medium/expanded windows (tablets, landscape) — satisfying the adaptive-layout
  * requirement.
  */
+@OptIn(ExperimentalMaterial3AdaptiveApi::class)
 @Composable
 fun CawfeeApp() {
     val navController = rememberNavController()
