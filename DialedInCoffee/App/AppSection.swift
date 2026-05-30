@@ -4,6 +4,7 @@ public enum AppSection: String, CaseIterable, Hashable, Identifiable, Codable, S
     case dashboard
     case fixMyCoffee
     case shotTimer
+    case machine
     case beans
     case recipes
     case tastingLog
@@ -22,6 +23,7 @@ public enum AppSection: String, CaseIterable, Hashable, Identifiable, Codable, S
         case .dashboard: return "Dashboard"
         case .fixMyCoffee: return "Fix My Coffee"
         case .shotTimer: return "Shot Timer"
+        case .machine: return "Machine"
         case .beans: return "Beans"
         case .recipes: return "Recipes"
         case .tastingLog: return "Tasting Log"
@@ -40,6 +42,7 @@ public enum AppSection: String, CaseIterable, Hashable, Identifiable, Codable, S
         case .dashboard: return "gauge.with.dots.needle.50percent"
         case .fixMyCoffee: return "wand.and.stars"
         case .shotTimer: return "timer"
+        case .machine: return "antenna.radiowaves.left.and.right"
         case .beans: return "leaf"
         case .recipes: return "book.closed"
         case .tastingLog: return "circle.hexagongrid"

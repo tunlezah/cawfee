@@ -24,6 +24,8 @@
     <string>14.0</string>
     <key>NSHumanReadableCopyright</key>
     <string>Local-first coffee dial-in tool. No network, no analytics.</string>
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>Cawfee uses Bluetooth to discover and control your Jura coffee machine. It is never used for location and no data leaves your device.</string>
     <key>NSSupportsAutomaticTermination</key>
     <true/>
     <key>NSSupportsSuddenTermination</key>

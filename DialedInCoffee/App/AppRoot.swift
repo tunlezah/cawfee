@@ -48,6 +48,7 @@ struct AppRoot: View {
                 row(.dashboard)
                 row(.fixMyCoffee)
                 row(.shotTimer)
+                row(.machine)
             }
             Section("Library") {
                 row(.beans)
@@ -86,6 +87,7 @@ struct AppRoot: View {
         case .dashboard: DashboardView()
         case .fixMyCoffee: FixMyCoffeeView()
         case .shotTimer: ShotTimerView()
+        case .machine: MachineControlView()
         case .beans: BeansListView()
         case .recipes: RecipesListView()
         case .tastingLog: TastingLogView()
