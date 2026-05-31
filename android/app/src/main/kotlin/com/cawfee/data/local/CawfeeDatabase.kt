@@ -16,7 +16,7 @@ import kotlinx.coroutines.flow.Flow
 
 /**
  * Room persistence layer for Cawfee. Each entity is a 1:1 port of one of the macOS
- * SwiftData @Model types (DialedInCoffee/Models/*.swift). Domain enums are stored as
+ * SwiftData @Model types in DialedInCoffee/Models. Domain enums are stored as
  * their Kotlin `name`; list fields use [Converters].
  */
 
