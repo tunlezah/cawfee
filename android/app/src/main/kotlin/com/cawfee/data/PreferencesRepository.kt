@@ -20,7 +20,7 @@ class PreferencesRepository @Inject constructor(
 ) {
     data class UserPrefs(
         val userMode: UserMode = UserMode.NOVICE,
-        val defaultDrink: DrinkType = DrinkType.FLAT_WHITE,
+        val defaultDrink: DrinkType = DrinkType.CAPPUCCINO,
         val appearance: AppearancePreference = AppearancePreference.SYSTEM,
         val machineName: String = "Jura E8",
         val hasCompletedOnboarding: Boolean = false,
@@ -29,7 +29,7 @@ class PreferencesRepository @Inject constructor(
     val prefs: Flow<UserPrefs> = dataStore.data.map { p ->
         UserPrefs(
             userMode = p[KEY_MODE]?.let { runCatching { UserMode.valueOf(it) }.getOrNull() } ?: UserMode.NOVICE,
-            defaultDrink = p[KEY_DRINK]?.let { runCatching { DrinkType.valueOf(it) }.getOrNull() } ?: DrinkType.FLAT_WHITE,
+            defaultDrink = p[KEY_DRINK]?.let { runCatching { DrinkType.valueOf(it) }.getOrNull() } ?: DrinkType.CAPPUCCINO,
             appearance = p[KEY_APPEARANCE]?.let { runCatching { AppearancePreference.valueOf(it) }.getOrNull() } ?: AppearancePreference.SYSTEM,
             machineName = p[KEY_MACHINE] ?: "Jura E8",
             hasCompletedOnboarding = p[KEY_ONBOARDED] ?: false,

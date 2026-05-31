@@ -23,12 +23,17 @@ import androidx.navigation.compose.rememberNavController
 import androidx.window.core.layout.WindowWidthSizeClass
 import com.cawfee.ui.dashboard.DashboardScreen
 import com.cawfee.ui.fix.FixMyCoffeeScreen
+import com.cawfee.ui.beans.BeansScreen
+import com.cawfee.ui.history.HistoryScreen
 import com.cawfee.ui.machine.MachineScreen
-import com.cawfee.ui.misc.PlaceholderScreen
+import com.cawfee.ui.maintenance.MaintenanceScreen
+import com.cawfee.ui.recipes.RecipesScreen
 import com.cawfee.ui.settings.SettingsScreen
 import com.cawfee.ui.shots.ShotTimerScreen
+import com.cawfee.ui.tasting.TastingScreen
 import com.cawfee.ui.tools.RatioConverterScreen
 import com.cawfee.ui.tools.StylePresetsScreen
+import com.cawfee.ui.water.WaterScreen
 
 /**
  * Root composable. Adapts the navigation surface to the available width: a bottom
@@ -100,11 +105,11 @@ private fun CawfeeNavHost(navController: NavHostController, modifier: Modifier =
         composable(Routes.RATIO) { RatioConverterScreen() }
         composable(Routes.STYLES) { StylePresetsScreen() }
         composable(Routes.EXPERT) { FixMyCoffeeScreen(expertMode = true) }
-        composable(Routes.BEANS) { PlaceholderScreen("Beans") }
-        composable(Routes.RECIPES) { PlaceholderScreen("Recipes") }
-        composable(Routes.TASTING) { PlaceholderScreen("Tasting Log") }
-        composable(Routes.HISTORY) { PlaceholderScreen("History") }
-        composable(Routes.WATER) { PlaceholderScreen("Water") }
-        composable(Routes.MAINTENANCE) { PlaceholderScreen("Maintenance") }
+        composable(Routes.BEANS) { BeansScreen() }
+        composable(Routes.RECIPES) { RecipesScreen() }
+        composable(Routes.TASTING) { TastingScreen() }
+        composable(Routes.HISTORY) { HistoryScreen() }
+        composable(Routes.WATER) { WaterScreen() }
+        composable(Routes.MAINTENANCE) { MaintenanceScreen() }
     }
 }

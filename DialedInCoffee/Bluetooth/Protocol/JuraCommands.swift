@@ -129,6 +129,9 @@ enum JuraMachineCatalog {
             JuraProduct(code: 0x07, name: "Latte Macchiato", isMilkBased: true, settings: [strength(), water(25, 240, 60), temperature(), milk(100), milkBreak()]),
             JuraProduct(code: 0x0A, name: "Milk Portion", isMilkBased: true, settings: [milk(60)]),
             JuraProduct(code: 0x0D, name: "Hot Water", isMilkBased: false, settings: [water(25, 450, 150), temperature(0)]),
+            JuraProduct(code: 0x11, name: "2 Ristretti", isMilkBased: false, settings: [water(15, 80, 20), temperature()]),
+            JuraProduct(code: 0x12, name: "2 Espressi", isMilkBased: false, settings: [water(15, 80, 45), temperature()]),
+            JuraProduct(code: 0x13, name: "2 Coffees", isMilkBased: false, settings: [water(25, 240, 110), temperature()]),
             JuraProduct(code: 0x2E, name: "Flat White", isMilkBased: true, settings: [strength(), water(25, 240, 60), temperature(), milk(40)]),
         ],
         alertNames: [

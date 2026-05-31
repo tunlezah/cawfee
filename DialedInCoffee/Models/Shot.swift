@@ -35,7 +35,7 @@ public final class Shot {
         date: Date = Date(),
         beanName: String? = nil,
         beanSlug: String? = nil,
-        drink: DrinkType = .flatWhite,
+        drink: DrinkType = .cappuccino,
         doseGrams: Double = 18,
         yieldGrams: Double = 36,
         preInfusionSeconds: Double = 0,
@@ -59,7 +59,7 @@ public final class Shot {
     }
 
     public var drink: DrinkType {
-        get { DrinkType(rawValue: drinkRaw) ?? .flatWhite }
+        get { DrinkType(rawValue: drinkRaw) ?? .cappuccino }
         set { drinkRaw = newValue.rawValue }
     }
 

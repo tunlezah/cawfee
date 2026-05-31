@@ -1,0 +1,1089 @@
+{
+  "_comment": "Seeded bean catalogue for Dialed In Coffee. Roaster ranges accurate as of May 2026, sourced from each roaster's online shop. The 🥛 marker on a bean name means the roaster (or product packaging) explicitly recommends it for milk drinks (flat white / latte / cappuccino). Single origins without the marker are recommended for black/filter unless otherwise noted. milkTime values are kept as seconds of steaming for the existing UI; black/filter beans default to 0. Sources cited inline via the 'notes' field where a specific recipe came from the roaster.",
+  "beans": [
+
+    {
+      "slug": "cosmorex-signature-blue",
+      "name": "Signature Blue 🥛",
+      "roaster": "Cosmorex Coffee",
+      "roastLevel": "mediumDark",
+      "milkFriendly": true,
+      "flavourNotes": ["dark chocolate", "red berries", "toffee", "nutty"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 36, "milkTime": 20, "temp": "normal" },
+      "notes": "Cosmorex's flagship espresso blend. Full-bodied, medium-high acidity, long smooth sweet finish. Tip: pulls best around 1:2 in 28–32s; if shots run bitter, go slightly coarser and drop to 92°C-equivalent (lower temp setting)."
+    },
+    {
+      "slug": "cosmorex-k-street",
+      "name": "K Street 🥛",
+      "roaster": "Cosmorex Coffee",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["milk chocolate", "caramel", "nut"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Named after Kingston / K Street, this is Cosmorex's go-to milk blend — classic Aussie flat white profile. Crowd-favourite at the Fyshwick roastery cafe."
+    },
+    {
+      "slug": "cosmorex-80-20",
+      "name": "80/20 🥛",
+      "roaster": "Cosmorex Coffee",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "caramel", "almond"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "80% Arabica / 20% Robusta-style balanced blend. Reliable everyday espresso, holds up well in milk and as a long black."
+    },
+    {
+      "slug": "cosmorex-cherry-sun",
+      "name": "Cherry Sun 🥛",
+      "roaster": "Cosmorex Coffee",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["red fruit", "milk chocolate", "brown sugar"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Fruit-leaning milk espresso. Try 1:2.2 if the cup feels flat — the berry notes lift with a slightly longer pull."
+    },
+    {
+      "slug": "cosmorex-hometown",
+      "name": "Hometown 🥛",
+      "roaster": "Cosmorex Coffee",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["milk chocolate", "caramel", "hazelnut", "citrus"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Brazil + Colombia blend. Medium body, medium acidity. Clean, slightly sweet finish — appeals to a wide range of drinkers. Source: Cosmorex tasting notes (Wagga Catering)."
+    },
+    {
+      "slug": "cosmorex-double-barrel",
+      "name": "Double Barrel 🥛",
+      "roaster": "Cosmorex Coffee",
+      "roastLevel": "mediumDark",
+      "milkFriendly": true,
+      "flavourNotes": ["dark chocolate", "spice", "smoky", "dark fruit"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 20, "temp": "normal" },
+      "notes": "Brazil + Colombia, medium-dark roast. Full-bodied, low-to-medium acidity, long bold finish. Punchy in milk; runs slightly bitter as long black — pull tighter (1:1.8)."
+    },
+    {
+      "slug": "cosmorex-premium-special",
+      "name": "Premium Special 🥛",
+      "roaster": "Cosmorex Coffee",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["cocoa", "vanilla", "almond", "citrus"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Cosmorex's premium house blend. Medium body and acidity, clean sweet aftertaste. Versatile — works in milk drinks and as straight espresso."
+    },
+    {
+      "slug": "cosmorex-peak",
+      "name": "Peak",
+      "roaster": "Cosmorex Coffee",
+      "roastLevel": "medium",
+      "milkFriendly": false,
+      "flavourNotes": ["decadent chocolate", "booze", "cherries"],
+      "recommendedSettings": { "grinder": 5, "strength": 7, "volume": 36, "milkTime": 0, "temp": "normal" },
+      "notes": "‘Blackforest cake’ profile per Cosmorex. A specialty espresso meant for black drinking — the cherry/boozy note gets buried in milk. Try 1:2.3 to let the fruit show."
+    },
+    {
+      "slug": "cosmorex-big-chill",
+      "name": "Big Chill",
+      "roaster": "Cosmorex Coffee",
+      "roastLevel": "mediumLight",
+      "milkFriendly": false,
+      "flavourNotes": ["bright", "fruit-forward", "clean"],
+      "recommendedSettings": { "grinder": 5, "strength": 7, "volume": 36, "milkTime": 0, "temp": "normal" },
+      "notes": "Cold-brew / iced-friendly lighter roast. Pull at 1:2.5, finer grind than the milk blends."
+    },
+    {
+      "slug": "cosmorex-sorriso",
+      "name": "Sorriso 🥛",
+      "roaster": "Cosmorex Coffee",
+      "roastLevel": "mediumDark",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "hazelnut", "toffee"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 20, "temp": "normal" },
+      "notes": "Italian-style ‘smile’ blend. Traditional milk espresso profile."
+    },
+    {
+      "slug": "cosmorex-nitro",
+      "name": "Nitro",
+      "roaster": "Cosmorex Coffee",
+      "roastLevel": "medium",
+      "milkFriendly": false,
+      "flavourNotes": ["chocolate", "smooth", "low-acid"],
+      "recommendedSettings": { "grinder": 5, "strength": 7, "volume": 100, "milkTime": 0, "temp": "normal" },
+      "notes": "Designed for cold-brew / nitro draw. Coarse-grind brew preferred."
+    },
+    {
+      "slug": "cosmorex-rio-gold",
+      "name": "Rio Gold 🥛",
+      "roaster": "Cosmorex Coffee",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["brown sugar", "milk chocolate", "nut"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Brazil-forward classic milk blend. Sweet and chocolatey."
+    },
+    {
+      "slug": "cosmorex-gamer-blend",
+      "name": "Gamer Blend 🥛",
+      "roaster": "Cosmorex Coffee",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "caramel", "toffee"],
+      "recommendedSettings": { "grinder": 4, "strength": 8, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Higher-caffeine ‘game session’ blend. Strength bumped one notch."
+    },
+    {
+      "slug": "cosmorex-decaf-water-processed",
+      "name": "Decaf Water Processed 🥛",
+      "roaster": "Cosmorex Coffee",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "caramel", "nutty"],
+      "recommendedSettings": { "grinder": 4, "strength": 8, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Swiss Water decaf. Medium body, low acidity, smooth slightly sweet finish. Bump strength one notch — decaf beans run lower density."
+    },
+    {
+      "slug": "cosmorex-colombian-arabica-supremo",
+      "name": "Colombian Arabica Supremo",
+      "roaster": "Cosmorex Coffee",
+      "roastLevel": "medium",
+      "milkFriendly": false,
+      "flavourNotes": ["caramel", "red apple", "chocolate"],
+      "recommendedSettings": { "grinder": 5, "strength": 7, "volume": 36, "milkTime": 0, "temp": "normal" },
+      "origin": "Colombia",
+      "notes": "Classic Colombian single origin. Balanced acidity, great as straight espresso or long black."
+    },
+    {
+      "slug": "cosmorex-sumatra",
+      "name": "Sumatra",
+      "roaster": "Cosmorex Coffee",
+      "roastLevel": "mediumDark",
+      "milkFriendly": true,
+      "flavourNotes": ["earthy", "dark chocolate", "tobacco", "low acidity"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 20, "temp": "normal" },
+      "origin": "Indonesia, Sumatra",
+      "process": "Wet-hulled",
+      "notes": "Heavy bodied wet-hulled Indonesian. Holds up in milk despite being SO. Avoid lighter ratios — needs body."
+    },
+    {
+      "slug": "cosmorex-new-guinea",
+      "name": "New Guinea",
+      "roaster": "Cosmorex Coffee",
+      "roastLevel": "medium",
+      "milkFriendly": false,
+      "flavourNotes": ["stone fruit", "cocoa", "florals"],
+      "recommendedSettings": { "grinder": 5, "strength": 7, "volume": 36, "milkTime": 0, "temp": "normal" },
+      "origin": "Papua New Guinea",
+      "notes": "Highland PNG single origin. Floral lift unique to the region."
+    },
+
+    {
+      "slug": "ona-raspberry-candy",
+      "name": "Raspberry Candy 🥛",
+      "roaster": "ONA Coffee",
+      "roastLevel": "mediumLight",
+      "milkFriendly": true,
+      "flavourNotes": ["sweet berries", "white chocolate", "raspberry"],
+      "recommendedSettings": { "grinder": 5, "strength": 7, "volume": 39, "milkTime": 16, "temp": "normal" },
+      "origin": "Ethiopia (multiple lots)",
+      "process": "Carbonic Maceration / Natural / Washed blend",
+      "notes": "Inspired by Sasa Sestic's 2015 WBC routine. Roaster recipe: 20.5–21g in / 38–41g out / 25–30s / 93.5°C. Best 16–30 days post-roast. The berry brightness shines through milk."
+    },
+    {
+      "slug": "ona-aspen",
+      "name": "Aspen 🥛",
+      "roaster": "ONA Coffee",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "hazelnut", "malt"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 38, "milkTime": 18, "temp": "normal" },
+      "origin": "Brazil Minas Peaberry Natural + PNG Arokara Washed + Ethiopia Yirgacheffe G4 Natural",
+      "notes": "Roaster recipe: 20.7–21.3g in / 35–40g out / 24–29s / 93.5°C / 120g milk. Best 14–30 days post-roast. The ultimate chocolate lover's milk blend."
+    },
+    {
+      "slug": "ona-maple",
+      "name": "Maple 🥛",
+      "roaster": "ONA Coffee",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["caramel", "biscuit", "nut", "spice"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 37, "milkTime": 18, "temp": "normal" },
+      "origin": "Ethiopia Lekempti G4 Natural + Ethiopia Keffa G2 Washed",
+      "notes": "Roaster recipe: 20.5–21g in / 36–38g out / 24–28s / 93.5°C / 115–120g milk. Best 14–30 days post-roast. Go-to everyday milk blend."
+    },
+    {
+      "slug": "ona-gateway",
+      "name": "Gateway 🥛",
+      "roaster": "ONA Coffee",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate truffle", "mixed berries", "black forest"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 39, "milkTime": 18, "temp": "normal" },
+      "origin": "Ethiopia: Idido G3 + Areka Peaberry + Guji G1 Natural + Bench Maji G2 Washed",
+      "notes": "Roaster recipe: 20.7g in / 38–41g out / 25–31s / 93.5°C / 120g milk. Best 10–30 days post-roast. Entry-point specialty milk blend — works as espresso, long black, and milk drinks."
+    },
+    {
+      "slug": "ona-unwind",
+      "name": "Unwind (Decaf) 🥛",
+      "roaster": "ONA Coffee",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "caramel", "citrus peel"],
+      "recommendedSettings": { "grinder": 4, "strength": 8, "volume": 38, "milkTime": 18, "temp": "normal" },
+      "origin": "Colombia, Cauca - Piendamo (Project Origin)",
+      "process": "Sugarcane decaf",
+      "notes": "Roaster recipe: 21–21.5g in / 37–40g out / 93.5°C. Best 10–24 days post-roast. Sugarcane decaf preserves sweetness — works as espresso AND in milk."
+    },
+    {
+      "slug": "ona-raspberry-candy-filter",
+      "name": "Raspberry Candy Filter",
+      "roaster": "ONA Coffee",
+      "roastLevel": "light",
+      "milkFriendly": false,
+      "flavourNotes": ["raspberry", "white chocolate", "juicy"],
+      "recommendedSettings": { "grinder": 6, "strength": 6, "volume": 250, "milkTime": 0, "temp": "normal" },
+      "origin": "Ethiopia (carbonic maceration lots)",
+      "notes": "Filter-roasted version of the famous Raspberry Candy. V60 / Kalita / Aeropress. ~15g dose / 250ml / 94°C."
+    },
+    {
+      "slug": "ona-kamachungwa-kenya",
+      "name": "Kamachungwa AB, Kenya",
+      "roaster": "ONA Coffee",
+      "roastLevel": "mediumLight",
+      "milkFriendly": false,
+      "flavourNotes": ["blackcurrant", "tomato", "grapefruit"],
+      "recommendedSettings": { "grinder": 5, "strength": 7, "volume": 38, "milkTime": 0, "temp": "normal" },
+      "origin": "Kenya",
+      "process": "Washed",
+      "notes": "Espresso-roasted Kenyan SC – classic SL28-style profile. Pull longer (1:2.2) to bring out the blackcurrant."
+    },
+    {
+      "slug": "ona-la-esperanza-honey-cr",
+      "name": "La Esperanza, Costa Rica (Honey)",
+      "roaster": "ONA Coffee",
+      "roastLevel": "mediumLight",
+      "milkFriendly": false,
+      "flavourNotes": ["honey", "stone fruit", "praline"],
+      "recommendedSettings": { "grinder": 5, "strength": 7, "volume": 38, "milkTime": 0, "temp": "normal" },
+      "origin": "Costa Rica",
+      "process": "Honey",
+      "notes": "Espresso lot. Honey-processed sweetness. New in. Try 1:2 in 26–30s."
+    },
+    {
+      "slug": "ona-finca-quejina-guatemala",
+      "name": "Finca Quejina, Guatemala",
+      "roaster": "ONA Coffee",
+      "roastLevel": "mediumLight",
+      "milkFriendly": false,
+      "flavourNotes": ["chocolate", "red apple", "brown sugar"],
+      "recommendedSettings": { "grinder": 5, "strength": 7, "volume": 38, "milkTime": 0, "temp": "normal" },
+      "origin": "Guatemala",
+      "process": "Washed",
+      "notes": "Espresso single origin."
+    },
+    {
+      "slug": "ona-fazenda-engenho-brazil",
+      "name": "Fazenda do Engenho Lot 10, Brazil",
+      "roaster": "ONA Coffee",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["peanut", "milk chocolate", "caramel"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 37, "milkTime": 18, "temp": "normal" },
+      "origin": "Brazil, Carmo de Minas",
+      "process": "Washed",
+      "notes": "Lower-acidity Brazilian — crosses over from SO espresso into a milk-friendly cup."
+    },
+    {
+      "slug": "ona-la-esperanza-natural-cr",
+      "name": "La Esperanza, Costa Rica (Natural) 🥛",
+      "roaster": "ONA Coffee",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["red berries", "milk chocolate", "tropical"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 38, "milkTime": 18, "temp": "normal" },
+      "origin": "Costa Rica",
+      "process": "Natural",
+      "notes": "ONA's curated milk-based single origin. Heavier fruit than the honey lot — sits beautifully under steamed milk."
+    },
+    {
+      "slug": "ona-los-pirineos-el-salvador",
+      "name": "Los Pirineos, El Salvador",
+      "roaster": "ONA Coffee",
+      "roastLevel": "light",
+      "milkFriendly": false,
+      "flavourNotes": ["stone fruit", "honey", "florals"],
+      "recommendedSettings": { "grinder": 6, "strength": 6, "volume": 250, "milkTime": 0, "temp": "normal" },
+      "origin": "El Salvador",
+      "process": "Washed",
+      "notes": "Filter roast. V60 recipe: 15g / 250ml / 94°C / 2:30–3:00."
+    },
+    {
+      "slug": "ona-yirgacheffe-chelbesa",
+      "name": "Yirgacheffe Chelbesa G1, Ethiopia",
+      "roaster": "ONA Coffee",
+      "roastLevel": "light",
+      "milkFriendly": false,
+      "flavourNotes": ["bergamot", "florals", "lemon tea"],
+      "recommendedSettings": { "grinder": 6, "strength": 6, "volume": 250, "milkTime": 0, "temp": "normal" },
+      "origin": "Ethiopia, Yirgacheffe",
+      "process": "Washed",
+      "notes": "Classic washed Yirgacheffe filter. Bright, floral, tea-like."
+    },
+    {
+      "slug": "ona-yirgacheffe-halo",
+      "name": "Yirgacheffe Halo G1, Ethiopia",
+      "roaster": "ONA Coffee",
+      "roastLevel": "light",
+      "milkFriendly": false,
+      "flavourNotes": ["blueberry", "strawberry", "jammy"],
+      "recommendedSettings": { "grinder": 6, "strength": 6, "volume": 250, "milkTime": 0, "temp": "normal" },
+      "origin": "Ethiopia, Yirgacheffe",
+      "process": "Natural",
+      "notes": "Natural-processed Yirgacheffe filter — heavy fruit, jammy sweetness."
+    },
+    {
+      "slug": "ona-finca-pampojila-guatemala",
+      "name": "Finca Pampojila, Guatemala",
+      "roaster": "ONA Coffee",
+      "roastLevel": "light",
+      "milkFriendly": false,
+      "flavourNotes": ["red apple", "milk chocolate", "almond"],
+      "recommendedSettings": { "grinder": 6, "strength": 6, "volume": 250, "milkTime": 0, "temp": "normal" },
+      "origin": "Guatemala",
+      "process": "Natural",
+      "notes": "Filter SO. New in."
+    },
+
+    {
+      "slug": "redbrick-coffee-coffee",
+      "name": "Coffee Coffee 🥛",
+      "roaster": "Redbrick Coffee",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["toffee", "chocolate"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 38, "milkTime": 18, "temp": "normal" },
+      "origin": "70% Brazil Carmo de Minas + 30% Colombia (Antioquia/Huila/Tolima)",
+      "process": "Natural + Washed blend",
+      "notes": "Roaster recipe: 18–21g in / 36–41g out / 26–30s / 96°C. Filter: 15g / 250ml / 94°C / 2:30–3:00. The everyday classic — milk and black both work."
+    },
+    {
+      "slug": "redbrick-good-day",
+      "name": "Good Day 🥛",
+      "roaster": "Redbrick Coffee",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["malt", "caramel"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 38, "milkTime": 18, "temp": "normal" },
+      "origin": "50% Balboa, Cauca + 50% La Pradera, Quindío (Colombia)",
+      "notes": "Seasonal Colombian micro-lot blend. Roaster recipe: 18–21g in / 36–41g out / 26–30s / 96°C."
+    },
+    {
+      "slug": "redbrick-rogue",
+      "name": "Rogue",
+      "roaster": "Redbrick Coffee",
+      "roastLevel": "mediumLight",
+      "milkFriendly": false,
+      "flavourNotes": ["candy", "berries", "jammy"],
+      "recommendedSettings": { "grinder": 5, "strength": 7, "volume": 38, "milkTime": 0, "temp": "normal" },
+      "origin": "50% Gotiti (Gedeb, Ethiopia) + 50% La Leona (Armenia, Colombia)",
+      "process": "Natural + Washed",
+      "notes": "Roaster recipe: 18–21g in / 36–41g out / 26–30s / 96°C. Berry-forward — meant for black drinkers."
+    },
+    {
+      "slug": "redbrick-dark",
+      "name": "Dark 🥛",
+      "roaster": "Redbrick Coffee",
+      "roastLevel": "dark",
+      "milkFriendly": true,
+      "flavourNotes": ["dark chocolate", "brown sugar"],
+      "recommendedSettings": { "grinder": 3, "strength": 7, "volume": 37, "milkTime": 22, "temp": "normal" },
+      "origin": "50% Carnaval (Brazil) + 20% El Indio (Colombia) + 30% Aileu AL1 (Timor-Leste)",
+      "notes": "Dark roast for those who want bold and full-bodied. Roaster recipe: 18–21g in / 36–41g out / 26–30s / 96°C."
+    },
+    {
+      "slug": "redbrick-decaf",
+      "name": "Decaf 🥛",
+      "roaster": "Redbrick Coffee",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["cocoa", "dried fruit"],
+      "recommendedSettings": { "grinder": 4, "strength": 8, "volume": 38, "milkTime": 18, "temp": "normal" },
+      "origin": "Colombia, Popayan, Caturra",
+      "process": "Sugarcane (ethyl acetate) decaf",
+      "notes": "Roaster recipe: 18–21g in / 36–41g out / 26–30s / 96°C. Sugarcane decaf preserves natural sweetness."
+    },
+    {
+      "slug": "redbrick-cruzado-vasquez-peru",
+      "name": "Cruzado Vasquez, Peru",
+      "roaster": "Redbrick Coffee",
+      "roastLevel": "mediumLight",
+      "milkFriendly": false,
+      "flavourNotes": ["blood orange", "vanilla soft serve", "silky"],
+      "recommendedSettings": { "grinder": 5, "strength": 7, "volume": 38, "milkTime": 0, "temp": "normal" },
+      "origin": "Peru, Tabaconas, Cajamarca; Asociación La Gran Reserva",
+      "process": "Washed (16h dry fermentation)",
+      "notes": "Espresso-roasted SO. Juicy blood orange over vanilla. 1:2 in 26–30s."
+    },
+    {
+      "slug": "redbrick-mbilima-rwanda",
+      "name": "Mbilima Organic, Rwanda",
+      "roaster": "Redbrick Coffee",
+      "roastLevel": "light",
+      "milkFriendly": false,
+      "flavourNotes": ["green grape", "Earl Grey tea", "florals"],
+      "recommendedSettings": { "grinder": 6, "strength": 6, "volume": 250, "milkTime": 0, "temp": "normal" },
+      "origin": "Rwanda, Gakenke; Dukunde Kawa cooperative",
+      "process": "Washed",
+      "notes": "Filter roast. Red Bourbon, 2070 masl. V60: 15g / 250ml / 94°C / 2:30–3:00. Clean and elegant."
+    },
+    {
+      "slug": "redbrick-rubirizi-burundi",
+      "name": "Rubirizi, Burundi",
+      "roaster": "Redbrick Coffee",
+      "roastLevel": "mediumLight",
+      "milkFriendly": false,
+      "flavourNotes": ["yellow nectarine", "brown sugar", "silky"],
+      "recommendedSettings": { "grinder": 5, "strength": 7, "volume": 38, "milkTime": 0, "temp": "normal" },
+      "origin": "Burundi, Gitega, Rubirizi Hill; Long Miles Coffee",
+      "process": "Washed",
+      "notes": "Espresso-roasted Bourbon, 1500–1800m. Bright and silky."
+    },
+    {
+      "slug": "redbrick-diofanor-ruiz-colombia",
+      "name": "Diofanor Ruiz, Colombia (Pink Bourbon)",
+      "roaster": "Redbrick Coffee",
+      "roastLevel": "light",
+      "milkFriendly": false,
+      "flavourNotes": ["Jazz Apple", "goji berry", "silky"],
+      "recommendedSettings": { "grinder": 6, "strength": 6, "volume": 250, "milkTime": 0, "temp": "normal" },
+      "origin": "Colombia, Quindío, Buenavista; Finca La Divisa",
+      "process": "Washed",
+      "notes": "Pink Bourbon filter lot. 1600–2000m. Crisp apple lifted by jammy berry."
+    },
+    {
+      "slug": "redbrick-bumba-burundi",
+      "name": "Bumba, Burundi",
+      "roaster": "Redbrick Coffee",
+      "roastLevel": "light",
+      "milkFriendly": false,
+      "flavourNotes": ["strawberry jam", "dark chocolate"],
+      "recommendedSettings": { "grinder": 6, "strength": 6, "volume": 250, "milkTime": 0, "temp": "normal" },
+      "origin": "Burundi, Bumba Hill, Butanyerera; Long Miles Coffee (694 smallholders)",
+      "process": "Natural",
+      "notes": "Natural Bourbon, 1700m. Strawberry jam into dark chocolate. Filter-only."
+    },
+
+    {
+      "slug": "vittoria-espresso",
+      "name": "Vittoria Espresso 🥛",
+      "roaster": "Vittoria",
+      "roastLevel": "mediumDark",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "smoke", "caramel"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 20, "temp": "normal" },
+      "notes": "100% Arabica. Woolworths/Coles 1kg + 500g. Workhorse milk espresso — supermarket staple."
+    },
+    {
+      "slug": "vittoria-italian",
+      "name": "Vittoria Italian Blend 🥛",
+      "roaster": "Vittoria",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "smooth", "rich crema"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Original blend. Medium roast, smooth finish, rich crema."
+    },
+    {
+      "slug": "vittoria-mountain-grown",
+      "name": "Vittoria Mountain Grown 🥛",
+      "roaster": "Vittoria",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "caramel"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Rich high-altitude Arabica. Woolworths/Coles."
+    },
+    {
+      "slug": "vittoria-organic-espresso",
+      "name": "Vittoria Organic Espresso 🥛",
+      "roaster": "Vittoria",
+      "roastLevel": "mediumDark",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "smoky", "brown sugar"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 20, "temp": "normal" },
+      "notes": "100% certified organic. Woolworths/Coles 1kg."
+    },
+    {
+      "slug": "vittoria-latte",
+      "name": "Vittoria Latte 🥛",
+      "roaster": "Vittoria",
+      "roastLevel": "mediumDark",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "caramel", "nut"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 22, "temp": "normal" },
+      "notes": "Purpose-blended for latte/flat white. Cuts through milk strongly. Coles/Woolworths 1kg."
+    },
+    {
+      "slug": "vittoria-special-italian",
+      "name": "Vittoria Special Italian Blend 🥛",
+      "roaster": "Vittoria",
+      "roastLevel": "mediumDark",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "smoke"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 20, "temp": "normal" },
+      "notes": "Coles 1kg."
+    },
+    {
+      "slug": "vittoria-supreme",
+      "name": "Vittoria Supreme 🥛",
+      "roaster": "Vittoria",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "caramel"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Coles 500g."
+    },
+    {
+      "slug": "vittoria-deluxe",
+      "name": "Vittoria Deluxe 🥛",
+      "roaster": "Vittoria",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "caramel"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Coles 500g."
+    },
+    {
+      "slug": "vittoria-decaf",
+      "name": "Vittoria Decaf 🥛",
+      "roaster": "Vittoria",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "nut"],
+      "recommendedSettings": { "grinder": 4, "strength": 8, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Coles 500g. Bump strength one notch for decaf."
+    },
+
+    {
+      "slug": "lavazza-qualita-oro",
+      "name": "Lavazza Qualità Oro 🥛",
+      "roaster": "Lavazza",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["honey", "almond", "dried fruit"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "6-variety Arabica blend from Central/South America. Iconic Italian milk espresso. Woolworths 1kg."
+    },
+    {
+      "slug": "lavazza-crema-e-gusto",
+      "name": "Lavazza Crema e Gusto Classico 🥛",
+      "roaster": "Lavazza",
+      "roastLevel": "dark",
+      "milkFriendly": true,
+      "flavourNotes": ["dark chocolate", "spice", "intense"],
+      "recommendedSettings": { "grinder": 3, "strength": 7, "volume": 35, "milkTime": 22, "temp": "normal" },
+      "notes": "Arabica + Robusta. Intense and bold — runs bitter as long black; shines in milk."
+    },
+    {
+      "slug": "lavazza-espresso-barista-gran-crema",
+      "name": "Lavazza Espresso Barista Gran Crema 🥛",
+      "roaster": "Lavazza",
+      "roastLevel": "mediumDark",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "crema-rich", "caramel"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 20, "temp": "normal" },
+      "notes": "Made in Italy. Café-style at home. Woolworths/Coles 1kg + 500g."
+    },
+    {
+      "slug": "lavazza-espresso-barista-intenso",
+      "name": "Lavazza Espresso Barista Intenso 🥛",
+      "roaster": "Lavazza",
+      "roastLevel": "dark",
+      "milkFriendly": true,
+      "flavourNotes": ["dark chocolate", "spice", "intense"],
+      "recommendedSettings": { "grinder": 3, "strength": 7, "volume": 35, "milkTime": 22, "temp": "normal" },
+      "notes": "High-intensity dark roast. Coles 1kg + 500g."
+    },
+    {
+      "slug": "lavazza-espresso-barista-perfetto",
+      "name": "Lavazza Espresso Barista Perfetto 🥛",
+      "roaster": "Lavazza",
+      "roastLevel": "mediumDark",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "caramel", "balanced"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 20, "temp": "normal" },
+      "notes": "Coles 1kg."
+    },
+    {
+      "slug": "lavazza-espresso-barista-organic",
+      "name": "Lavazza Espresso Barista Organic 🥛",
+      "roaster": "Lavazza",
+      "roastLevel": "mediumDark",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "balanced"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 20, "temp": "normal" },
+      "notes": "Organic certified. Coles 1kg."
+    },
+    {
+      "slug": "lavazza-medium-roast-smooth",
+      "name": "Lavazza Medium Roast Smooth & Aromatic 🥛",
+      "roaster": "Lavazza",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["smooth", "aromatic", "balanced"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Coles 1kg."
+    },
+    {
+      "slug": "lavazza-tales-eternal-roma",
+      "name": "Lavazza Tales of Italy — Eternal Roma 🥛",
+      "roaster": "Lavazza",
+      "roastLevel": "mediumDark",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "spice"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 20, "temp": "normal" },
+      "notes": "Premium series. Coles 500g."
+    },
+    {
+      "slug": "lavazza-tales-alluring-napoli",
+      "name": "Lavazza Tales of Italy — Alluring Napoli 🥛",
+      "roaster": "Lavazza",
+      "roastLevel": "dark",
+      "milkFriendly": true,
+      "flavourNotes": ["dark chocolate", "bold"],
+      "recommendedSettings": { "grinder": 3, "strength": 7, "volume": 35, "milkTime": 22, "temp": "normal" },
+      "notes": "Premium series. Coles 500g."
+    },
+    {
+      "slug": "lavazza-tales-capri",
+      "name": "Lavazza Tales of Italy — Capri 🥛",
+      "roaster": "Lavazza",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["smooth", "balanced"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Premium series. Coles 500g."
+    },
+
+    {
+      "slug": "grinders-espresso",
+      "name": "Grinders Espresso 🥛",
+      "roaster": "Grinders",
+      "roastLevel": "mediumDark",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "caramel"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 20, "temp": "normal" },
+      "notes": "Coles 1kg."
+    },
+    {
+      "slug": "grinders-crema",
+      "name": "Grinders Crema 🥛",
+      "roaster": "Grinders",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["cocoa", "malt", "honey"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Smooth and creamy. Woolworths/Coles 1kg."
+    },
+    {
+      "slug": "grinders-rich-espresso",
+      "name": "Grinders Rich Espresso 🥛",
+      "roaster": "Grinders",
+      "roastLevel": "dark",
+      "milkFriendly": true,
+      "flavourNotes": ["dark chocolate", "bold"],
+      "recommendedSettings": { "grinder": 3, "strength": 7, "volume": 35, "milkTime": 22, "temp": "normal" },
+      "notes": "Coles 1kg."
+    },
+    {
+      "slug": "grinders-cafe-q-cremello",
+      "name": "Grinders Cafe-Q Cremello 🥛",
+      "roaster": "Grinders",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["caramel", "milk chocolate"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Premium Cafe-Q range. Coles 1kg + 500g."
+    },
+    {
+      "slug": "grinders-cafe-q-classico",
+      "name": "Grinders Cafe-Q Classico 🥛",
+      "roaster": "Grinders",
+      "roastLevel": "mediumDark",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "balanced"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 20, "temp": "normal" },
+      "notes": "Coles 500g."
+    },
+    {
+      "slug": "grinders-cafe-q-organico",
+      "name": "Grinders Cafe-Q Organico 🥛",
+      "roaster": "Grinders",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "smooth"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Organic certified. Coles 1kg."
+    },
+    {
+      "slug": "grinders-cafe-q-darkoko",
+      "name": "Grinders Cafe-Q Darkoko 🥛",
+      "roaster": "Grinders",
+      "roastLevel": "dark",
+      "milkFriendly": true,
+      "flavourNotes": ["dark chocolate", "bold"],
+      "recommendedSettings": { "grinder": 3, "strength": 7, "volume": 35, "milkTime": 22, "temp": "normal" },
+      "notes": "Coles 1kg + 500g."
+    },
+
+    {
+      "slug": "campos-superior",
+      "name": "Campos Superior 🥛",
+      "roaster": "Campos",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["caramel", "butterscotch", "red fruit"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Full-bodied roast. Woolworths/Coles 1kg. Caramel + sweet red fruit."
+    },
+    {
+      "slug": "tobys-estate-woolloomooloo",
+      "name": "Toby's Estate Woolloomooloo Blend 🥛",
+      "roaster": "Toby's Estate",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["spice", "earth", "cocoa", "caramel"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Toby's flagship — syrupy and round. Big presence in milk; capable as black. Available via Harris Farm + specialty grocers in ACT."
+    },
+    {
+      "slug": "republica-signature-blend",
+      "name": "Republica Organic Signature Blend 🥛",
+      "roaster": "Republica",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "nut", "fair-trade"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Australia's #1 organic coffee brand. Certified organic + fair-trade. Roasted in Sydney. Woolworths/Coles 1kg."
+    },
+    {
+      "slug": "republica-melbourne",
+      "name": "Republica Organic Melbourne 🥛",
+      "roaster": "Republica",
+      "roastLevel": "mediumDark",
+      "milkFriendly": true,
+      "flavourNotes": ["dark chocolate", "smoky"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 20, "temp": "normal" },
+      "notes": "Darker organic blend. Woolworths 500g."
+    },
+    {
+      "slug": "will-co-natural",
+      "name": "Will & Co Natural 🥛",
+      "roaster": "Will & Co",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "nut"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Sydney roaster, blended and packed in Australia. Woolworths 1kg."
+    },
+    {
+      "slug": "harris-strong",
+      "name": "Harris Strong 🥛",
+      "roaster": "Harris",
+      "roastLevel": "dark",
+      "milkFriendly": true,
+      "flavourNotes": ["bold", "nutty", "full-bodied"],
+      "recommendedSettings": { "grinder": 3, "strength": 7, "volume": 35, "milkTime": 22, "temp": "normal" },
+      "notes": "Aussie-made dark roast, intensity 4/5. Woolworths/Coles 1kg."
+    },
+    {
+      "slug": "harris-very-strong",
+      "name": "Harris Very Strong 🥛",
+      "roaster": "Harris",
+      "roastLevel": "dark",
+      "milkFriendly": true,
+      "flavourNotes": ["very bold", "smoky", "full-bodied"],
+      "recommendedSettings": { "grinder": 3, "strength": 7, "volume": 35, "milkTime": 22, "temp": "normal" },
+      "notes": "The darker of the two Harris tins. Woolworths 1kg."
+    },
+    {
+      "slug": "woolworths-espresso",
+      "name": "Woolworths Coffee Beans Espresso 🥛",
+      "roaster": "Woolworths",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "fruity sweetness"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Smooth, rich. Woolworths own-brand 1kg — entry-priced milk espresso."
+    },
+
+    {
+      "slug": "coles-urban-strong",
+      "name": "Coles Urban Coffee Culture Strong 🥛",
+      "roaster": "Coles Urban Coffee Culture",
+      "roastLevel": "dark",
+      "milkFriendly": true,
+      "flavourNotes": ["dark cocoa", "vanilla", "aniseed", "clove"],
+      "recommendedSettings": { "grinder": 3, "strength": 7, "volume": 35, "milkTime": 22, "temp": "normal" },
+      "notes": "Coles own-brand, batch-roasted in Melbourne. Intensity 10. 1kg."
+    },
+    {
+      "slug": "coles-urban-medium",
+      "name": "Coles Urban Coffee Culture Medium Roast 🥛",
+      "roaster": "Coles Urban Coffee Culture",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "caramel", "smooth"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Coles 1kg. Roasted/packed in Australia."
+    },
+    {
+      "slug": "coles-urban-organic",
+      "name": "Coles Urban Coffee Culture Organic 🥛",
+      "roaster": "Coles Urban Coffee Culture",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "smooth"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Organic. Coles 1kg."
+    },
+    {
+      "slug": "coles-simply",
+      "name": "Coles Simply Coffee Beans 🥛",
+      "roaster": "Coles",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["balanced", "chocolate"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Budget-tier Coles brand 1kg."
+    },
+
+    {
+      "slug": "daley-street-medium-dark",
+      "name": "Daley Street Medium/Dark 🥛",
+      "roaster": "Daley Street",
+      "roastLevel": "mediumDark",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "caramel"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 20, "temp": "normal" },
+      "notes": "Coles 1kg + 200g."
+    },
+    {
+      "slug": "daley-street-dark",
+      "name": "Daley Street Dark Roast 🥛",
+      "roaster": "Daley Street",
+      "roastLevel": "dark",
+      "milkFriendly": true,
+      "flavourNotes": ["dark chocolate", "bold"],
+      "recommendedSettings": { "grinder": 3, "strength": 7, "volume": 35, "milkTime": 22, "temp": "normal" },
+      "notes": "Coles 1kg."
+    },
+    {
+      "slug": "daley-street-medium",
+      "name": "Daley Street Medium 🥛",
+      "roaster": "Daley Street",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "balanced"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Coles 200g."
+    },
+    {
+      "slug": "daley-street-decaf",
+      "name": "Daley Street Decaf 🥛",
+      "roaster": "Daley Street",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "smooth"],
+      "recommendedSettings": { "grinder": 4, "strength": 8, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Coles 200g. Bump strength one notch for decaf."
+    },
+
+    {
+      "slug": "inglewood-downtown-seasonal-espresso",
+      "name": "Inglewood Downtown Seasonal Espresso",
+      "roaster": "Inglewood",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["seasonal", "specialty"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Coles 1kg specialty offering — seasonal espresso."
+    },
+    {
+      "slug": "pablo-and-rustys-porter-st",
+      "name": "Pablo & Rusty's Porter St",
+      "roaster": "Pablo & Rusty's",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["balanced", "specialty"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 36, "milkTime": 18, "temp": "normal" },
+      "notes": "Sydney specialty roaster, supermarket-distributed via Coles 1kg."
+    },
+    {
+      "slug": "st-ali-orthodox",
+      "name": "ST. ALi Orthodox Blend",
+      "roaster": "ST. ALi",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["balanced", "milk chocolate"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 36, "milkTime": 18, "temp": "normal" },
+      "notes": "Melbourne specialty roaster. Coles 500g."
+    },
+    {
+      "slug": "st-ali-italo-disco",
+      "name": "ST. ALi Italo Disco",
+      "roaster": "ST. ALi",
+      "roastLevel": "mediumDark",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "bold"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 20, "temp": "normal" },
+      "notes": "Coles 500g."
+    },
+    {
+      "slug": "st-ali-feels-good",
+      "name": "ST. ALi Feels Good Blend",
+      "roaster": "ST. ALi",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["sweet", "balanced"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 36, "milkTime": 18, "temp": "normal" },
+      "notes": "Coles 500g."
+    },
+    {
+      "slug": "23-degrees-mrs-robinson",
+      "name": "23 Degrees Mrs Robinson",
+      "roaster": "23 Degrees",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "caramel"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Coles 250g specialty."
+    },
+    {
+      "slug": "23-degrees-little-ripper",
+      "name": "23 Degrees Little Ripper",
+      "roaster": "23 Degrees",
+      "roastLevel": "mediumDark",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "punchy"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 20, "temp": "normal" },
+      "notes": "Coles 250g."
+    },
+    {
+      "slug": "lor-classique",
+      "name": "L'OR Classique Intensity 6 🥛",
+      "roaster": "L'OR",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["balanced", "smooth"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Coles 500g."
+    },
+    {
+      "slug": "caffe-aurora-italian",
+      "name": "Caffe Aurora Italian Blend 🥛",
+      "roaster": "Caffe Aurora",
+      "roastLevel": "mediumDark",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "Italian roast"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 20, "temp": "normal" },
+      "notes": "Coles 1kg, budget Italian-style."
+    },
+    {
+      "slug": "wolff-zero-caffeine",
+      "name": "Wolff Coffee Zero Caffeine",
+      "roaster": "Wolff Coffee",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "smooth"],
+      "recommendedSettings": { "grinder": 4, "strength": 8, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Decaf specialty. Coles 500g. Bump strength for decaf."
+    },
+    {
+      "slug": "wolff-edelweiss",
+      "name": "Wolff Coffee Edelweiss Blend",
+      "roaster": "Wolff Coffee",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["balanced", "chocolate"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Coles 500g specialty."
+    },
+
+    {
+      "slug": "aldi-lazzio-medium",
+      "name": "ALDI Lazzio Medium 🥛",
+      "roaster": "ALDI Lazzio",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "caramel", "smooth"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "notes": "Roasted in Melbourne by Black Bag Roasters. 2025 Golden Bean Awards — Large Chain category overall champion. ALDI 1kg — best-value supermarket bean."
+    },
+    {
+      "slug": "aldi-lazzio-dark",
+      "name": "ALDI Lazzio Dark 🥛",
+      "roaster": "ALDI Lazzio",
+      "roastLevel": "dark",
+      "milkFriendly": true,
+      "flavourNotes": ["dark chocolate", "smoky"],
+      "recommendedSettings": { "grinder": 3, "strength": 7, "volume": 35, "milkTime": 22, "temp": "normal" },
+      "notes": "ALDI 1kg. Heavier roast for milk."
+    },
+    {
+      "slug": "aldi-lazzio-luxe-blend",
+      "name": "ALDI Lazzio Luxe Blend 🥛",
+      "roaster": "ALDI Lazzio",
+      "roastLevel": "mediumDark",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "caramel", "nut"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 20, "temp": "normal" },
+      "notes": "Premium Lazzio range. ALDI 1kg. Multiple 2025 Golden Bean medals."
+    },
+    {
+      "slug": "aldi-lazzio-so-brazil",
+      "name": "ALDI Lazzio Single Origin Brazil",
+      "roaster": "ALDI Lazzio",
+      "roastLevel": "medium",
+      "milkFriendly": true,
+      "flavourNotes": ["chocolate", "nut", "brown sugar"],
+      "recommendedSettings": { "grinder": 4, "strength": 7, "volume": 35, "milkTime": 18, "temp": "normal" },
+      "origin": "Brazil",
+      "notes": "ALDI 1kg single origin."
+    },
+    {
+      "slug": "aldi-lazzio-so-colombia",
+      "name": "ALDI Lazzio Single Origin Colombia",
+      "roaster": "ALDI Lazzio",
+      "roastLevel": "medium",
+      "milkFriendly": false,
+      "flavourNotes": ["caramel", "red apple", "balanced"],
+      "recommendedSettings": { "grinder": 5, "strength": 7, "volume": 36, "milkTime": 0, "temp": "normal" },
+      "origin": "Colombia",
+      "notes": "ALDI 1kg. Brighter SO — works as long black."
+    },
+    {
+      "slug": "aldi-lazzio-luxe-reserve-guatemala",
+      "name": "ALDI Lazzio Luxe Reserve Guatemala",
+      "roaster": "ALDI Lazzio",
+      "roastLevel": "mediumLight",
+      "milkFriendly": false,
+      "flavourNotes": ["chocolate", "stone fruit", "balanced"],
+      "recommendedSettings": { "grinder": 5, "strength": 7, "volume": 36, "milkTime": 0, "temp": "normal" },
+      "origin": "Guatemala",
+      "notes": "Premium reserve SO. ALDI 500g (released Jul 2025)."
+    },
+    {
+      "slug": "aldi-lazzio-luxe-reserve-ethiopia",
+      "name": "ALDI Lazzio Luxe Reserve Ethiopia",
+      "roaster": "ALDI Lazzio",
+      "roastLevel": "mediumLight",
+      "milkFriendly": false,
+      "flavourNotes": ["florals", "stone fruit", "bergamot"],
+      "recommendedSettings": { "grinder": 5, "strength": 7, "volume": 36, "milkTime": 0, "temp": "normal" },
+      "origin": "Ethiopia",
+      "notes": "Premium reserve SO. ALDI 500g (released Jul 2025). Lifted floral character."
+    }
+
+  ]
+}
