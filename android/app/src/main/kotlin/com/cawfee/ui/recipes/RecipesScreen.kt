@@ -111,7 +111,8 @@ fun RecipesScreen(viewModel: RecipesViewModel = hiltViewModel()) {
             existing = editing,
             beans = beans,
             onDismiss = { showEditor = false },
-            onDelete = editing?.let { e -> { viewModel.delete(e); showEditor = false } },
+            canDelete = editing != null,
+            onDelete = { editing?.let { viewModel.delete(it) }; showEditor = false },
             onSave = { name, drink, milk, beanSlug, settings, notes, fav, lastGood ->
                 viewModel.save(editing, name, drink, milk, beanSlug, settings, notes, fav, lastGood)
                 showEditor = false
@@ -126,7 +127,8 @@ private fun RecipeEditorDialog(
     existing: RecipeEntity?,
     beans: List<BeanEntity>,
     onDismiss: () -> Unit,
-    onDelete: (() -> Unit)?,
+    canDelete: Boolean,
+    onDelete: () -> Unit,
     onSave: (
         name: String, drink: DrinkType, milk: MilkKind, beanSlug: String?,
         settings: MachineSettings, notes: String, favourite: Boolean, lastGood: Boolean,
@@ -194,7 +196,7 @@ private fun RecipeEditorDialog(
                 }
 
                 Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    if (onDelete != null) TextButton(onClick = onDelete) { Text("Delete") }
+                    if (canDelete) TextButton(onClick = onDelete) { Text("Delete") }
                     Box(Modifier.weight(1f))
                     TextButton(onClick = onDismiss) { Text("Cancel") }
                     TextButton(

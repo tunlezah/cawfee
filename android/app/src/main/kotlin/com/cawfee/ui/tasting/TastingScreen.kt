@@ -116,7 +116,8 @@ fun TastingScreen(viewModel: TastingViewModel = hiltViewModel()) {
             existing = editing,
             beans = beans,
             onDismiss = { showEditor = false },
-            onDelete = editing?.let { e -> { viewModel.delete(e); showEditor = false } },
+            canDelete = editing != null,
+            onDelete = { editing?.let { viewModel.delete(it) }; showEditor = false },
             onSave = { slug, beanName, drink, descriptors, body, acidity, sweetness, bitterness, rating, free ->
                 viewModel.save(editing, slug, beanName, drink, descriptors, body, acidity, sweetness, bitterness, rating, free)
                 showEditor = false
@@ -131,7 +132,8 @@ private fun TastingEditorDialog(
     existing: TastingNoteEntity?,
     beans: List<BeanEntity>,
     onDismiss: () -> Unit,
-    onDelete: (() -> Unit)?,
+    canDelete: Boolean,
+    onDelete: () -> Unit,
     onSave: (
         beanSlug: String?, beanName: String?, drink: DrinkType, descriptors: List<String>,
         body: Int, acidity: Int, sweetness: Int, bitterness: Int, rating: Int, freeText: String,
@@ -213,7 +215,7 @@ private fun TastingEditorDialog(
                 OutlinedTextField(freeText, { freeText = it }, label = { Text("Free notes") }, modifier = Modifier.fillMaxWidth())
 
                 Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    if (onDelete != null) TextButton(onClick = onDelete) { Text("Delete") }
+                    if (canDelete) TextButton(onClick = onDelete) { Text("Delete") }
                     Box(Modifier.weight(1f))
                     TextButton(onClick = onDismiss) { Text("Cancel") }
                     TextButton(onClick = {
