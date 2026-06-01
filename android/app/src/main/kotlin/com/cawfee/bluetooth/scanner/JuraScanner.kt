@@ -7,7 +7,6 @@ import android.bluetooth.le.ScanFilter
 import android.bluetooth.le.ScanResult
 import android.bluetooth.le.ScanSettings
 import android.content.Context
-import android.os.ParcelUuid
 import com.cawfee.bluetooth.DiscoveredJura
 import com.cawfee.bluetooth.parser.AdvertisementParser
 import com.cawfee.bluetooth.protocol.JuraGatt
@@ -38,15 +37,12 @@ class JuraScanner @Inject constructor(
         val scanner = adapter?.bluetoothLeScanner
             ?: run { close(IllegalStateException("Bluetooth is off or unavailable")); return@callbackFlow }
 
-        // Match Jura by manufacturer-data company id OR by advertised service UUID.
-        val filters = listOf(
-            ScanFilter.Builder()
-                .setManufacturerData(JuraGatt.COMPANY_ID, ByteArray(0))
-                .build(),
-            ScanFilter.Builder()
-                .setServiceUuid(ParcelUuid.fromString(JuraGatt.SERVICE_CONTROL))
-                .build(),
-        )
+        // Scan broadly and match in software (see onScanResult). Hardware/offloaded
+        // ScanFilters on manufacturer data are unreliable on many Android BLE chipsets —
+        // the Jura's key+model often ride in the scan RESPONSE, which offloaded filters
+        // skip, so a hardware filter can hide the machine entirely. This mirrors the
+        // CoreBluetooth client, which also scans without a manufacturer-data filter.
+        val filters = emptyList<ScanFilter>()
         val settings = ScanSettings.Builder()
             .setScanMode(ScanSettings.SCAN_MODE_LOW_LATENCY) // active scan
             .setCallbackType(ScanSettings.CALLBACK_TYPE_ALL_MATCHES)
