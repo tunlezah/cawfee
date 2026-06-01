@@ -66,11 +66,16 @@ class JuraBleClient @Inject constructor(
                 establish(target)
                 _connectionState.value = ConnectionState.Connected(target)
                 _machine.value = MachineSnapshot(device = target)
+                // Keep the process (and the ≤9 s heartbeat) alive while connected so the
+                // OS does not kill us in the background and leave a stale GATT link that
+                // the machine's single-connection lock would refuse to replace.
+                startConnectionService()
                 startHeartbeat()
                 refreshStatus()
             } catch (t: Throwable) {
                 _connectionState.value = ConnectionState.Failed(t.message ?: "Connection failed")
                 cleanup()
+                stopConnectionService()
             }
         }
     }
@@ -167,6 +172,7 @@ class JuraBleClient @Inject constructor(
     fun disconnect() {
         heartbeatJob?.cancel()
         cleanup()
+        stopConnectionService()
         _connectionState.value = ConnectionState.Disconnected()
     }
 
@@ -175,10 +181,12 @@ class JuraBleClient @Inject constructor(
         heartbeatJob?.cancel()
         cleanup()
         if (target == null) {
+            stopConnectionService()
             _connectionState.value = ConnectionState.Disconnected(reason)
             return
         }
-        // App-layer reconnection (§7.4).
+        // App-layer reconnection (§7.4). Keep the foreground service running across the
+        // gap so the process survives and the reconnect can actually complete.
         scope.launch {
             _connectionState.value = ConnectionState.Reconnecting(target, 1)
             try {
@@ -187,6 +195,7 @@ class JuraBleClient @Inject constructor(
                 startHeartbeat()
                 refreshStatus()
             } catch (t: Throwable) {
+                stopConnectionService()
                 _connectionState.value = ConnectionState.Disconnected(t.message)
             }
         }
@@ -196,4 +205,9 @@ class JuraBleClient @Inject constructor(
         connection?.close()
         connection = null
     }
+
+    // The foreground service is what lets a connected machine survive backgrounding /
+    // screen-off; without it the heartbeat coroutine is starved and the link drops.
+    private fun startConnectionService() = runCatching { JuraConnectionService.start(context) }
+    private fun stopConnectionService() = runCatching { JuraConnectionService.stop(context) }
 }
